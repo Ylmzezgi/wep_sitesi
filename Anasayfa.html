@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="Anasayfa.css">
+
+</head>
+<body>
+ <div class="header">
+
+<ul class="menu">
+<li><a href="Anasayfa.html" class="one active">Anasayfa</a></li>
+<li><a href="Tarihçe.html" class="two">Tarihçe</a></li>
+<li><a href="Tarihiyer.html" class="three">Tarihi Yer</a></li>
+<li><a href="Konaklama.html" class="four">Konaklama</a></li>
+<li><a href="İlçeler.html" class="five">İlçeler</a></li>
+<li><a href="Yiyecekler.html" class="six">Yiyecekler</a></li>
+<li><a href="soru.html" class="seven" >Sivas Quiz</a></li>
+<li><a href="iletisim.html" class="eight" >İletişim</a></li>
+</ul>
+<div>
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+  </div>
+</ul>
+
+</div>
+
+
+<div class="div">
+<div class="slider">
+<div class="slides">
+<input type="radio" name="radio-btn" id="radio1">
+<input type="radio" name="radio-btn" id="radio2">
+<input type="radio" name="radio-btn" id="radio3">
+<input type="radio" name="radio-btn" id="radio4">
+
+<div class="slide first">
+<img src="sivas1.jpg" alt="">
+</div>
+<div class="slide">
+<img src="sivas1.jpg" alt="">
+</div>
+<div class="slide">
+<img src="kangal.jpg" alt="">
+</div>
+<div class="slide">
+<img src="kopru.jpg" alt="">
+</div>
+
+<div class="navigation-auto">
+<div class="auto-btn1"></div>
+<div class="auto-btn2"></div>
+<div class="auto-btn3"></div>
+<div class="auto-btn4"></div>
+</div>
+
+</div>
+
+<div class="navigation-manual">
+<label for="radio1" class="manual-btn"></label>
+<label for="radio2" class="manual-btn"></label>
+<label for="radio3" class="manual-btn"></label>
+<label for="radio4" class="manual-btn"></label>
+</div>
+
+</div>
+</div>
+<div class="background">
+</div>
+
+<script type="text/javascript">
+var counter = 1;
+setInterval(function(){
+document.getElementById('radio' + counter).checked = true;
+counter++;
+if(counter > 4){
+counter = 1;
+}
+}, 5000);
+</script>
+<script src="s.js"></script>
+<script src="zaman.js"></script>
+</body>
+</html>

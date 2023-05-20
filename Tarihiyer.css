@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body.dark{
+    background-color: #111;
+  }
+  
+  body.dark .navbar{
+    background-color:#e6e6e6;
+  }
+  body.dark span,body.dark div {
+    color: gray;
+  }
+.header{
+    background-color: aqua;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+}
+
+.header.menu{
+    width: 100%;
+    height: 80px;
+    background:rgba(94, 75, 163, 0.4) ;
+    
+}
+
+.header li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 100px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 1s , background-color 1s;
+}
+.header ul li a:hover{
+    background-color: white;
+    color: violet;
+}
+.tarihiyer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
+}
+.tarihiyer h2{
+    color: brown;
+    margin-left: 900px;
+    text-align: center;
+}
+.tarihiyer h3{
+    color: cadetblue;
+    text-align: center;
+}
+.tarihiyer h1{
+    color: blue;
+    text-align: center;
+}
+.tarihiyer{
+    width: 60%;
+    margin: auto;
+}
+
+
+.container-1 .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(247, 242, 241, 0.623);
+    } 
+    
+            .checkbox {
+              opacity: 0;
+              position: absolute;
+              margin-top: 20px;
+            }
+            
+            .label {
+              background-color: #111;
+              border-radius: 50px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 5px;
+              position: relative;
+              height: 26px;
+              width: 50px;
+              transform: scale(1.5);
+              margin-top: 20px;
+              top: -80px;
+              left: 40px;
+            }
+            
+            
+            .label .ball {
+              background-color: #fff;
+              border-radius: 50%;
+              position: absolute;
+              top: 2px;
+              left: 2px;
+              height: 33px;
+              width: 33px;
+              transform: translateX(0px);
+              transition: transform 0.2s linear;
+            }
+            
+            .checkbox:checked + .label .ball {
+              transform: translateX(24px);
+            }
+            
+            
+            .fa-moon {
+              color: #f1c40f;
+            }
+            
+            .fa-sun {
+              color: #f39c12;
+            }
